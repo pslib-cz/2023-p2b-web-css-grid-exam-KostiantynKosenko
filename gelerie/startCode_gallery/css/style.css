@@ -121,13 +121,34 @@ main {
 /*GALERIE*/
 
 
-
-
 @media (min-width: 700px) {
-    
+    section{
+        background-color: #4C2121;
+    }
 }
 @media (min-width: 1200px) {
- 
+    section{
+        background-color: #4C2121;
+    }
+
+    .gallery{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-gap: 10px;
+        
+    }
+
+    .gItem__link{
+        grid-area: link;
+    }
+
+    .gItem--2{
+        /*grid-area: link2;*/
+    }
+
+    .gItem--3{
+        /*grid-area: link3;*/
+    }
 }
 .gallery__buttons {
     transform: translate(-50%, 0%); 
